@@ -56,4 +56,6 @@ describe('hashCandidate', () => {
   test('returns the hashed candidate', () => {
     const candidate = 'test';
     const result = hashCandidate(candidate);
-    expect(result).toBe
+    expect(result).toBe(crypto.createHash('sha3-512').update(candidate).digest('hex'));
+  });
+});
