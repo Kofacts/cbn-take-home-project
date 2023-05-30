@@ -1,4 +1,4 @@
-const { deterministicPartitionKey, determineCandidate, getHashedData, hashCandidate } = require('./your-refactored-code');
+const { deterministicPartitionKey, determineCandidate, getHashedData, hashCandidate } = require('./dpk');
 
 describe('deterministicPartitionKey', () => {
   test('returns the correct partition key when event has a partitionKey property', () => {
